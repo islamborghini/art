@@ -1,14 +1,30 @@
-import logo from './logo.svg';
 import React from 'react'; 
+import {Routes, Route, Link} from 'react-router-dom';
 import './App.css';
 import Home from './Home'
 import Header from './Header';
-import { NavLink } from "react-router-dom";
+import {About} from './pages/About';
+import {Batik} from './pages/Batik';
+import {Gobelen} from './pages/Gobelen';
+import {Notfoundpage} from './pages/Notfoundpage'
+
 function App() {
   return (
+    
     <div className="App">
-    <Header/>
-    <Home/>
+      <header>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/batik">Batik</a>
+        <a href="/gobelen">Gobelen</a>
+      </header>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/batik" element={<Batik />}/>
+        <Route path="/gobelen" element={<Gobelen />}/>
+        <Route path="*" element={<Notfoundpage />}/>
+      </Routes>
     {/*Home*/}
       {/*Header*/}
 
