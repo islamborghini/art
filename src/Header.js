@@ -12,15 +12,14 @@ function Header() {
         />
         <div className='header__center'>
             <input type = "text" />
-
             {/*imported icon */}
             <MdSearch/>
         </div>    
 
         <div className='header__right'>
           <p>Войти</p>
-          <MdLanguage/>
-          <MdExpandMore/>
+          <MdLanguage size={40}/>
+          <MdExpandMore size={40}/>
           <Avatar/>
         </div>
         

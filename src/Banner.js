@@ -12,7 +12,7 @@ function Banner() {
                 Станьте частью искусства вместе с Online Art Gallery
             </h1>
             <Button variant='outlined'>Зарегистрироваться</Button>
-            
+    
         </div>
     </div>
   )

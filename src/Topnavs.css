@@ -1,0 +1,26 @@
+.top-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 101;
+    width: 100%;
+}
+
+.top-nav nav{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-left: 500px;
+    max-width: fit-content;
+    height: 30px;
+}
+
+.top-nav a{
+    margin-left: 40% ;
+    text-decoration: none;
+    color: black;
+
+}

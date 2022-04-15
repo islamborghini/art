@@ -2,9 +2,9 @@ import React from 'react'
 import './Card.css'
 
 //adding the props as an argument
-function Card({src, title, description, price}) {
+function Cards({src, title, description, price}) {
   return (
-    <div className='card' onClick={"location.href='./pages/batik.js';"}>
+    <div className='card'>
         <img src={src} alt=""/>
         <div className="card__info">
             <h2>{title}</h2>
@@ -15,4 +15,4 @@ function Card({src, title, description, price}) {
   )
 }
 
-export default Card
+export default Cards

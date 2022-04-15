@@ -6,18 +6,15 @@ import Header from './Header';
 import {About} from './pages/About';
 import {Batik} from './pages/Batik';
 import {Gobelen} from './pages/Gobelen';
-import {Notfoundpage} from './pages/Notfoundpage'
+import {Notfoundpage} from './pages/Notfoundpage';
+import Topnavs from './Topnavs'
 
 function App() {
   return (
     
     <div className="App">
-      <header>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/batik">Batik</a>
-        <a href="/gobelen">Gobelen</a>
-      </header>
+      <Topnavs/>
+      <Header/>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
